@@ -10,3 +10,12 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.custom-icon {
+    font-size: 1.1rem; 
+  }
+  
+  @media (min-width: 576px) {
+    .custom-icon {
+      font-size: 2rem; 
+    }
+  }
