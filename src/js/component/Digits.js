@@ -20,7 +20,7 @@ const Digits = ({ description, inputTimer, startOnLoad, maxDigits }) => {
   const [isPaused, setIsPaused] = useState(!startOnLoad);
   const [inputValue, setInputValue] = useState("");
   const [alarmTime, setAlarmTime] = useState(0);
-  const maxSeconds = 9 * (maxDigits - 1); // Maximum seconds based on max digits - clock digit
+  const maxSeconds = 10 **(maxDigits - 1); // Maximum seconds based on max digits - clock digit
 
   //Just using useEffect for making the intervals instead of rendering each time everything
   useEffect(() => {
